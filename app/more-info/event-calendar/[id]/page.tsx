@@ -1,9 +1,9 @@
 import { Event } from "../page"; // Import Event type from parent page
 
 type EventParams = {
-  params: {
+  params: Promise<{
     id: string; // This will be the dynamic part of the URL
-  };
+  }>;
 };
 
 export default async function EventPage({ params }: EventParams) {
